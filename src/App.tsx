@@ -13,7 +13,6 @@ function App() {
   })
 
 
-  console.log('data ', data);
   const dispatch = useDispatch();
   const handleAddSquare = () => {
     dispatch(addSquare({ id: Date.now() }))
@@ -45,11 +44,6 @@ function App() {
           </animated.div>
           ))
         }
-        {/*{*/}
-        {/*  data?.map(({ id }: { id: string }) => (*/}
-        {/*    <div className="w-1/5 border-[2px] border-amber-600 h-[100px] bg-red-500" key={id} />*/}
-        {/*  ))*/}
-        {/*}*/}
       </div>
     </section>
   );
